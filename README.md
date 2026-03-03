@@ -6,8 +6,7 @@ Replicates the [Split Cloudflare Workers template](https://github.com/splitio/cl
   - **Treatment `on`** → `https://google.com`
   - **Treatment `off`** (or control) → `https://apple.com`
 - **No pre-resolved treatments**: The edge evaluates the flag per request (and per key via `?key=...`).
-- **Sync Lambda**: Runs on a schedule and populates DynamoDB with the rollout plan via the Split Synchronizer (DynamoDB storage wrapper). No separate “resolve and cache” step.
-
+- **Sync Lambda**: Runs on a schedule and populates DynamoDB with the rollout plan via the Split Synchronizer (DynamoDB storage wrapper). 
 ## Architecture
 
 - **CloudFront** – Viewer-request → Lambda@Edge.
@@ -31,7 +30,7 @@ Replicates the [Split Cloudflare Workers template](https://github.com/splitio/cl
 1. In Split (e.g. [Harness Feature Flags](https://harness.io)) create a feature flag (e.g. `my_feature`).
 2. Define at least two treatments: **on** and **off** (and optionally **control**).
 3. Set the default rule or targeting rules as you like (e.g. 100% on, or by key).
-4. Copy the **server-side SDK key** for that environment (Split/FME Settings → SDK keys → Server-side key).
+4. Copy the **server-side SDK key** for that environment (FME Settings → SDK keys → Server-side key).
 
 ### 3. Deploy with Terraform
 
