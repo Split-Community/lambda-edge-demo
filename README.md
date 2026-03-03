@@ -28,7 +28,7 @@ Replicates the [Split Cloudflare Workers template](https://github.com/splitio/cl
 ### 2. Create the feature flag in Split
 
 1. In Split (e.g. [Harness Feature Flags](https://harness.io)) create a feature flag (e.g. `my_feature`).
-2. Define at least two treatments: **on** and **off** (and optionally **control**).
+2. Define at least two treatments: **on** and **off**.
 3. Set the default rule or targeting rules as you like (e.g. 100% on, or by key).
 4. Copy the **server-side SDK key** for that environment (FME Settings → SDK keys → Server-side key).
 
