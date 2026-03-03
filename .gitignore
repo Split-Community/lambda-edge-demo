@@ -1,0 +1,12 @@
+node_modules/
+terraform/build/
+terraform/*.zip
+terraform/.terraform/
+# Sensitive / generated — do not commit
+terraform/*.tfstate
+terraform/*.tfstate.*
+terraform/terraform.tfvars
+# Keep .terraform.lock.hcl committed for reproducible provider versions
+*.log
+out.json
+edge/config.json

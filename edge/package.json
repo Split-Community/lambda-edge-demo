@@ -1,0 +1,11 @@
+{
+  "name": "edge-redirect-edge",
+  "version": "1.0.0",
+  "description": "Lambda@Edge: full Split SDK, DynamoDB Global Table, 302 redirect",
+  "main": "index.js",
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.0.0",
+    "@aws-sdk/lib-dynamodb": "^3.0.0",
+    "@splitsoftware/splitio-browserjs": "^1.6.0"
+  }
+}

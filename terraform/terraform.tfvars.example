@@ -1,0 +1,9 @@
+# Copy to terraform.tfvars and set values.
+
+split_sdk_key = "YOUR_SPLIT_SERVER_SIDE_SDK_KEY"
+
+# Optional
+# feature_flag_name           = "my_feature"
+# project_name                = "edge-redirect"
+# aws_region                  = "us-east-1"
+# sync_schedule_rate_minutes  = 5

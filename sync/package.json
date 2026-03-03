@@ -1,0 +1,11 @@
+{
+  "name": "edge-redirect-sync",
+  "version": "1.0.0",
+  "description": "Sync Lambda: Split Synchronizer + resolve treatment to DynamoDB",
+  "main": "index.js",
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.0.0",
+    "@aws-sdk/lib-dynamodb": "^3.0.0",
+    "@splitsoftware/splitio-sync-tools": "^1.0.0"
+  }
+}
