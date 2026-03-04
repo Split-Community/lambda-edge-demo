@@ -5,7 +5,6 @@ Replicates the [Split Cloudflare Workers template](https://github.com/splitio/cl
 - **Redirect at the edge**: CloudFront viewer-request invokes Lambda@Edge, which runs the **full Split/FME SDK** in `consumer_partial` mode, reads the rollout plan from the **nearest DynamoDB Global Table replica**, evaluates `getTreatment(key, featureFlag)`, and returns an HTML page showing the redirect target (or you can change it to a 302).
   - **Treatment `on`** → `https://google.com`
   - **Treatment `off`** (or control) → `https://apple.com`
-- **No pre-resolved treatments**: The edge evaluates the flag per request (and per key via `?key=...`).
 - **Sync Lambda**: Runs on a schedule and populates DynamoDB with the rollout plan via the Split Synchronizer (DynamoDB storage wrapper). 
 ## Architecture
 
